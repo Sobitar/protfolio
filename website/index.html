@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title> Document</title>
+        <link rel="stylesheet" href="style_sobita.css" type="text/css">
+        <script src="https://kit.fontawesome.com/1f3ba38524.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <!---<img src="pics/rlogo.png" class="logo">-->
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#protfolio">Protfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                    <div class="header-text">
+                        <p>UI Developer/Web Developer</p>
+                        <h1>Hello,I'm <span class="auto-input"></span></h1>
+                    </div>
+                </div>
+            </div>
+       <!--------------------about------------------>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="pics/roja.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p> Proven experience in developing consumer-focused websites using HTML, CSS, Javascript, ReactJS and other Java-script libraries. Built products for desktop and web application users over 4+ years, meeting highest standards for web design, user experience, best practices and speed. Designed and developed web applications across multiple APIs, third-party </p>
+                        <div class="tab-titles">
+                             <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                             <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                             <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="Skills">
+                            <ul>
+                                <li><span>Programming languages/Web Technologies</span><br>ReactJS, HTML5, JavaScript, Typescript, CSS3, J-Query</li>
+                                <li><span>Databases/Version-controls</span><br>SQL Server,Visual Basic,Firebase, Git-hub</li>
+                                <li><span>Operating Systems</span><br>Windows 7/XP/VISTA/2008/10, Mac OS, LINUX, UNIX</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>2022-current</span><br>UI Developer/ React JS Developer at PayPal</li>
+                                <li><span>2017-2021</span><br>UI Developer/React Developer at InsertV consultancy services, Hyderabad</li>
+                                <li><span>2014-2017</span><br>QA Automation Analyst at InsertV consultancy services, Hyderabad </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>2014</span><br>Bachelor of Technology in ECE</li>
+                                <li> K L University</li>
+                                
+                            </ul>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+        <!------------------services----------------->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                    <div class="services-list">
+                        <div>
+                            <i class="fa-solid fa-code"></i>
+                            <h2>Web Design</h2>
+                            <p>Web designers plan, create and code internet sites and web pages, which combine text with sounds, pictures, graphics and responsible for creating the design and layout of a website or web pages. It can be  a brand new website or updating an already existing site.</p>
+                            <a href="#">Learn more</a>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-crop"></i>
+                            <h2>UI Design</h2>
+                            <p>This role is to translate creative software design concepts and ideas into reality using front end technology. By understanding the user interface design solution both in its practical intent and creative vision, and convert it into engineered softwares.</p>
+                            <a href="#">Learn more</a>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-database"></i>
+                            <h2>Data Base/Controls</h2>
+                            <p>Developed SQL DB management system to analysis and design business data</p>
+                            <a href="#">Learn more</a>
+                        </div>
+
+                    </div>
+
+            </div>
+
+        </div>
+            <!---------------contact---------------->
+            <div id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="contact-left">
+                            <h1 class="sub-title">Contact Me</h1>
+                            <p><i class="fa-sharp fa-solid fa-paper-plane"></i>sobitareddy1231@gmail.com</p>
+                            <div class="social-icons">
+                                <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                            <a href=".pdf" download class="btn btn1">Download CV</a>
+                        </div>
+                        
+                        <div class="contact-right">
+                            <form>
+                                <input type="text" name="Name" placeholder="Your Name" required>
+                                <input type="text" name="email" placeholder="Your Email" required>
+                                <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                                <button type="submit" class="btn btn1">Submit</button>
+                            </form>
+                        
+                        </div>
+                        
+
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>Copyright © Sobita Reddy</p>
+                </div>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+            <script>
+                var typed= new Typed(".auto-input",{
+                    strings: ["Sobita Reddy", "from Austin", " a Developer"],
+                    typeSpeed: 100,
+                    backSpeed: 100,
+                    loop: true
+                })
+            </script>
+        <script>
+            var tablinks=document.getElementsByClassName("tab-links")
+            var tabcontents=document.getElementsByClassName("tab-contents")
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link")
+                document.getElementById(tabname).classList.add("active-tab")
+
+            }
+        </script>
+        <script>
+            var sidemeu = document.getElementById("sidemenu");
+            function openmenu(){
+                sidemeu.style.right= "0";
+            }
+            function closemenu(){
+                sidemeu.style.right= "-200px";
+            }
+            </script>
+            
+    </body>
+</html>
